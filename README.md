@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
 
-<div align="center">
+<!-- <div align="center">
   <a href="https://unsplash.com/photos/04X1Yp9hNH8">
   <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="logo" width="340"  height="auto" /><br/>
   </a>
-</div>
+</div> -->
 
-# To do list
+# Math magicians
 
 # 📗 Table of Contents
 
@@ -28,7 +28,7 @@
 
 # 📖 About the project <a name="about-project"></a>
 
-This is a project to create lists for a day. This was build using SPA (Single Page Application), JavaScript ES6, HTML5, CSS3, mobile-first approach. local storage API and DOM manipulation.
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA).
 
 ## 🛠 Built with <a name="built-with"></a>
 
@@ -55,10 +55,7 @@ This is a project to create lists for a day. This was build using SPA (Single Pa
     <li><a href="#">SASS</a></li>
   </ul>
   <ul>
-    <li><a href="#">Jest</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Jest</a></li>
+    <li><a href="#">React.js</a></li>
   </ul>
 </details>
 
@@ -72,7 +69,9 @@ This is a project to create lists for a day. This was build using SPA (Single Pa
 
 ## 🚀 Live demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/)
+Under construction.
+
+<!-- - [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +83,7 @@ To get a local copy up and running, follow these steps.
 
 Clone this repository to your desired folder:
 
-`git clone` https://github.com/J-C-S-V/webpack-to-do-list-
+`git clone` https://github.com/J-C-S-V/math-magicians
 
 ### Install
 
