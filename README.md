@@ -1,141 +1,70 @@
-<a name="readme-top"></a>
+# Getting Started with Create React App
 
-<div align="center">
-  <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-  <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="logo" width="340"  height="auto" /><br/>
-  </a>
-</div>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# To do list
+## Available Scripts
 
-# 📗 Table of Contents
+In the project directory, you can run:
 
-- [📖 About the project](#about-project)
-  - [🛠 Built with](#built-with)
-    - [Tech stack](#tech-stack)
-    - [Key features](#key-features)
-  - [🚀 Live demo](#live-demo)
-- [💻 Getting started](#getting-started)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-- [👷‍♂️ Author](#authors)
-- [🔭 Future features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+### `npm start`
 
-# 📖 About the project <a name="about-project"></a>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This is a project to create lists for a day. This was build using SPA (Single Page Application), JavaScript ES6, HTML5, CSS3, mobile-first approach. local storage API and DOM manipulation.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🛠 Built with <a name="built-with"></a>
+### `npm test`
 
-### Tech stack <a name="tech-stack"></a>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<details>
-  <summary>Languages and technologies</summary><br>
-  <ul>
-    <li><a href="#">JavaScript ES6</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Webpack</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">HTML5</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">CSS3</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Git</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">SASS</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Jest</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Jest</a></li>
-  </ul>
-</details>
+### `npm run build`
 
-### Key features <a name="key-features"></a>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **[Easy navigation]**
-- **[Personalized product]**
-- **[Mobile first]**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 🚀 Live demo <a name="live-demo"></a>
+### `npm run eject`
 
-- [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## 💻 Getting started <a name="getting-started"></a>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-To get a local copy up and running, follow these steps.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Setup
+## Learn More
 
-Clone this repository to your desired folder:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-`git clone` https://github.com/J-C-S-V/webpack-to-do-list-
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Install
+### Code Splitting
 
-`npm install`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Usage
+### Analyzing the Bundle Size
 
-`npm run build`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-`npm run start`
+### Making a Progressive Web App
 
-## 👷‍♂️ Author <a name="authors"></a>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-👷‍♂️ **Juan Sanchez**
+### Advanced Configuration
 
-- GitHub: [Juan Sanchez](https://github.com/J-C-S-V)
-- Twitter: [Juan Sanchez](https://twitter.com/juansan0)
-- LinkedIn: [Juan Sanchez](https://www.linkedin.com/in/juan-carlos-sanchez-vargas-a308b014b/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Deployment
 
-## 🔭 Future features <a name="future-features"></a>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- [ ] **[Payment]**
-- [ ] **[Footer]**
-- [ ] **[API integration]**
+### `npm run build` fails to minify
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you get inspired by this project you can give me a star 🙌
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](https://github.com/J-C-S-V/Portfolio-setup-and-mobile-first/blob/main/license.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
