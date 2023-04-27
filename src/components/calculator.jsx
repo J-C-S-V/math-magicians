@@ -1,36 +1,52 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 import '../styles/calculator.css';
 
+// Main component
 function Calculator() {
-  const [state, setState] = useState(0);
+  const [text, setText] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  function handleIncrement(event) {
-    setState(event.target.textContent);
-  }
+  let result;
+  if (text.next) {
+    result = text.next;
+  } else if (text.total) {
+    result = text.total;
+  } else result = 0;
+
+  const handleButtonClick = (event) => {
+    const newValue = calculate(text, event.target.textContent);
+    setText({ ...text, ...newValue });
+  };
 
   return (
     <div className="main-container">
-      <Screen state={state} />
-      <Buttons />
+      <Screen text={result} />
+      <Buttons clickValue={handleButtonClick} />
     </div>
   );
 }
 
-function Screen({ state }) {
+// Screen component
+function Screen({ text }) {
   return (
     <div className="screen-container">
-      <div className="screen">{state}</div>
+      <div className="screen">{text}</div>
     </div>
   );
 }
 
-function Buttons() {
+// Buttons component
+function Buttons({ clickValue }) {
   const simbols = [
     'AC',
     '+/-',
     '%',
-    '+',
+    '÷',
     '7',
     '8',
     '9',
@@ -51,7 +67,7 @@ function Buttons() {
   const simbolsContainer = [];
   for (let i = 0; i < simbols.length; i += 1) {
     simbolsContainer.push(
-      <button type="button" className="button" key={i}>
+      <button onClick={clickValue} type="button" className="button" key={i}>
         {simbols[i]}
       </button>,
     );
@@ -60,7 +76,7 @@ function Buttons() {
 }
 
 Screen.propTypes = {
-  state: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Calculator;
