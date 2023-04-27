@@ -20,9 +20,9 @@
   padding: 10px;
 }
 
-.button:hover{
-cursor: pointer;
-transform: scale(0.9);
+.button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
 .button:nth-child(18n) {
