@@ -9,7 +9,7 @@
   color: #f5913e;
 }
 
-.App > *{
+.App > * {
   flex: 1;
   padding: 60px;
   color: #ccc;
