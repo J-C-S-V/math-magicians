@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import '../styles/calculator.css';
 
-function Screen() {
+function Calculator() {
+  const [state, setState] = useState(0);
+
+  function handleIncrement(event) {
+    setState(event.target.textContent);
+  }
+
+  return (
+    <div className="main-container">
+      <Screen state={state} />
+      <Buttons />
+    </div>
+  );
+}
+
+function Screen({ state }) {
   return (
     <div className="screen-container">
-      <div className="screen">0</div>
+      <div className="screen">{state}</div>
     </div>
   );
 }
@@ -35,21 +51,16 @@ function Buttons() {
   const simbolsContainer = [];
   for (let i = 0; i < simbols.length; i += 1) {
     simbolsContainer.push(
-      <div className="button" key={i}>
+      <button type="button" className="button" key={i}>
         {simbols[i]}
-      </div>,
+      </button>,
     );
   }
   return simbolsContainer;
 }
 
-function Calculator() {
-  return (
-    <div className="main-container">
-      <Screen />
-      <Buttons />
-    </div>
-  );
-}
+Screen.propTypes = {
+  state: PropTypes.string.isRequired,
+};
 
 export default Calculator;
