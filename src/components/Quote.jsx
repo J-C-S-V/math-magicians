@@ -1,29 +1,38 @@
 import React from 'react';
 
 function Quote() {
-  const url = 'https://api.api-ninjas.com/v1/quotes?category=';
-  const category = 'knowledge';
-  const apiKey = 'iSOePepz25QMz4H2176HwA==Ys7JZLwntIHsSbKO';
+  const url = 'https://quote-garden.onrender.com/api/v3/quotes';
 
-  const [data, setData] = React.useState('loadng quote...');
-  const [author, setAuthor] = React.useState(null);
+  const [data, setData] = React.useState('loading quote...');
+  const [author, setAuthor] = React.useState('');
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     const apiCall = async () => {
-      await fetch(url + category, {
-        headers: {
-          'X-Api-Key': apiKey,
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          setData(data[0].quote);
-          setAuthor(data[0].author);
-        })
-        .catch((error) => console.log(error));
+      try {
+        await fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            setData(data.data[0].quoteText);
+            setAuthor(data.data[0].quoteAuthor);
+          });
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setIsLoading(false);
+      }
     };
     apiCall();
   }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="quote">
