@@ -6,6 +6,7 @@ function Quote() {
   const apiKey = 'iSOePepz25QMz4H2176HwA==Ys7JZLwntIHsSbKO';
 
   const [data, setData] = React.useState('loadng quote...');
+  const [author, setAuthor] = React.useState(null);
 
   React.useEffect(() => {
     const apiCall = async () => {
@@ -15,7 +16,10 @@ function Quote() {
         },
       })
         .then((response) => response.json())
-        .then((data) => setData(data[0].quote))
+        .then((data) => {
+          setData(data[0].quote);
+          setAuthor(data[0].author);
+        })
         .catch((error) => console.log(error));
     };
     apiCall();
@@ -24,7 +28,16 @@ function Quote() {
   return (
     <div className="quote">
       <h1 className="quote__h1">Quote: </h1>
-      <p className="quote__p">{data}</p>
+      <p className="quote__p">
+        &quot;
+        {data}
+        &quot;
+      </p>
+      <p>
+        Author :
+        {' '}
+        <span>{author}</span>
+      </p>
     </div>
   );
 }
