@@ -4,38 +4,36 @@ import calculate from '../logic/calculate';
 import '../styles/calculator.css';
 
 // Main component
-function Calculator() {
-  const [text, setText] = useState({
-    total: null,
-    next: null,
-    operation: null,
-  });
 
-  let result;
-  if (text.next) {
-    result = text.next;
-  } else if (text.total) {
-    result = text.total;
-  } else result = 0;
+const objTemplate = {
+  total: null,
+  next: null,
+  operation: null,
+}
+
+function Calculator() {
+  const [obj, setObj] = useState(objTemplate);
+
+  const result = obj.next || obj.total || 0;
 
   const handleButtonClick = (event) => {
-    const newValue = calculate(text, event.target.textContent);
-    setText({ ...text, ...newValue });
+    const newValue = calculate(obj, event.target.objContent);
+    setObj({ ...obj, ...newValue });
   };
 
   return (
     <div className="main-container">
-      <Screen text={result} />
+      <Screen obj={result} />
       <Buttons clickValue={handleButtonClick} />
     </div>
   );
 }
 
 // Screen component
-function Screen({ text }) {
+function Screen({ obj }) {
   return (
     <div className="screen-container">
-      <div className="screen">{text}</div>
+      <div className="screen">{obj}</div>
     </div>
   );
 }
@@ -76,7 +74,7 @@ function Buttons({ clickValue }) {
 }
 
 Screen.propTypes = {
-  text: PropTypes.string.isRequired,
+  obj: PropTypes.string.isRequired,
 };
 
 export default Calculator;
