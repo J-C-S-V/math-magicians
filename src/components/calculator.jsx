@@ -24,9 +24,12 @@ function Calculator() {
   };
 
   return (
-    <div className="main-container">
-      <Screen text={result} />
-      <Buttons clickValue={handleButtonClick} />
+    <div className="calculator">
+      <div className="calculator__h2">Let&apos;s do some math!</div>
+      <div className="calculator__container">
+        <Screen text={result} />
+        <Buttons clickValue={handleButtonClick} />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,19 @@
 @import 'global-styles';
 
-.main-container {
+.calculator{
+  display: flex;
+  margin-top: 6rem;
+}
+
+.calculator__h2 {
+  padding: 3rem;
+  color: map-get($colors, secondary-white);
+  font-size: 3rem;
+}
+
+.calculator__container {
   display: grid;
-  width: 250px;
+  width: 20rem;
   margin: auto;
   text-align: center;
 }
@@ -19,12 +30,12 @@
 .button {
   background-color: map-get($colors, tertiary-white);
   border: 1px solid map-get($colors, primary-grey);
-  padding: 10px;
+  padding: 1rem;
 }
 
 .button:hover {
   cursor: pointer;
-  transform: scale(0.9);
+  transform: scale(0.92);
 }
 
 .button:nth-child(18n) {

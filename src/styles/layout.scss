@@ -2,11 +2,12 @@
 
 .navbar {
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
 }
 
 .navbar__h1 {
-  padding: 1rem;
   font-size: 3rem;
   color: map-get($colors, primary-orange);
 }
@@ -14,5 +15,14 @@
 .navbar__ul {
   display: flex;
   list-style: none;
+  color: map-get($colors, primary-white);
+}
+
+.navbar__a {
+  color: map-get($colors, secondary-white);
+  padding: 1rem;
+}
+
+.navbar__a:hover {
   color: map-get($colors, primary-white);
 }
