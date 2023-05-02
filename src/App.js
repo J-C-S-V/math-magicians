@@ -3,20 +3,11 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Outlet,
 } from 'react-router-dom';
 import Calculator from './components/calculator';
 import Quote from './components/Quote';
-import './App.css';
-
-function Layout() {
-  return (
-    <>
-      <h1>Math Magicians</h1>
-      <Outlet />
-    </>
-  );
-}
+import Layout from './components/Layout';
+import './styles/App.scss';
 
 function App() {
   return (

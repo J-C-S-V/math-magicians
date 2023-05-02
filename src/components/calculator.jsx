@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
-import '../styles/calculator.css';
+import '../styles/calculator.scss';
 
 // Main component
 function Calculator() {

@@ -1,3 +1,5 @@
+@import 'global-styles';
+
 .main-container {
   display: grid;
   width: 250px;
@@ -6,7 +8,7 @@
 }
 
 .screen-container {
-  background-color: #858693;
+  background-color: map-get($colors, primary-grey);
   padding: 0.5rem;
   grid-column: 1 / span 4;
   display: flex;
@@ -15,8 +17,8 @@
 }
 
 .button {
-  background-color: #e0e0e0;
-  border: 1px solid #858693;
+  background-color: map-get($colors, tertiary-white);
+  border: 1px solid map-get($colors, primary-grey);
   padding: 10px;
 }
 
@@ -29,10 +31,7 @@
   grid-column: 1 / span 2;
 }
 
-.button:nth-child(4n+1) {
-  background-color: #f5913e;
+.button:nth-child(4n+1), .button:last-child{
+  background-color: map-get($colors, primary-orange );
 }
 
-.button:last-child {
-  background-color: #f5913e;
-}
