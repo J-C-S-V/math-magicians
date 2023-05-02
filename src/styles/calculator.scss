@@ -1,6 +1,6 @@
 @import 'global-styles';
 
-.calculator{
+.calculator {
   display: flex;
   margin-top: 6rem;
 }
@@ -42,7 +42,7 @@
   grid-column: 1 / span 2;
 }
 
-.button:nth-child(4n+1), .button:last-child{
-  background-color: map-get($colors, primary-orange );
+.button:nth-child(4n+1),
+.button:last-child {
+  background-color: map-get($colors, primary-orange);
 }
-
