@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/quote.scss';
 
 function Quote() {
   const url = 'https://quote-garden.onrender.com/api/v3/quotes';
@@ -27,7 +28,7 @@ function Quote() {
   }, []);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className="loading">Loading...</div>;
   }
 
   if (error) {

@@ -1,0 +1,7 @@
+@import 'global-styles';
+
+.quote,
+.loading {
+  padding: 3rem;
+  color: map-get($colors, secondary-white);
+}

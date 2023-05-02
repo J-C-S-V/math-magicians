@@ -1,3 +1,5 @@
+@import "global-styles";
+
 *,
 *::before,
 *::after {
@@ -7,5 +9,5 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #282c34;
+  background-color: map-get($colors, background-black);
 }

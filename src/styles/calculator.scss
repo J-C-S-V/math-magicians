@@ -1,0 +1,48 @@
+@import 'global-styles';
+
+.calculator {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.calculator__h2 {
+  padding: 3rem;
+  color: map-get($colors, secondary-white);
+  font-size: 3rem;
+}
+
+.calculator__container {
+  display: grid;
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+}
+
+.screen-container {
+  background-color: map-get($colors, primary-grey);
+  padding: 0.5rem;
+  grid-column: 1 / span 4;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.button {
+  background-color: map-get($colors, tertiary-white);
+  border: 1px solid map-get($colors, primary-grey);
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(0.92);
+}
+
+.button:nth-child(18n) {
+  grid-column: 1 / span 2;
+}
+
+.button:nth-child(4n+1),
+.button:last-child {
+  background-color: map-get($colors, primary-orange);
+}
