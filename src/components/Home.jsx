@@ -2,9 +2,9 @@ import '../styles/home.scss';
 
 export default function Home() {
   return (
-    <main className="home">
+    <main data-testid="main" className="home">
       <h1 className="home__h1">Welcome to my page!</h1>
-      <p className="home__p">
+      <p data-testid="main-p1" className="home__p">
         This is the ultimate tool for solving mathematical problems quickly and
         easily. Our calculator provides a simple and intuitive interface, making
         it easy to perform basic and advanced calculations without any hassle.
