@@ -42,7 +42,12 @@
   grid-column: 1 / span 2;
 }
 
-.button:nth-child(4n+1),
+.button:nth-child(4n + 1),
 .button:last-child {
   background-color: map-get($colors, primary-orange);
+}
+
+.main-container {
+  border-radius: 10px;
+  border: 5px solid #e0e0e0;
 }
