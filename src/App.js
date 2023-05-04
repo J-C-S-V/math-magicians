@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/calculator';
 import Quote from './components/Quote';
 import Home from './components/Home';

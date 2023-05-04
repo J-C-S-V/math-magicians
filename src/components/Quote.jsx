@@ -45,8 +45,9 @@ function Quote() {
       </p>
       <p>
         Author :
-        {' '}
-        <span>{author}</span>
+        <span>
+          {author}
+        </span>
       </p>
     </div>
   );
