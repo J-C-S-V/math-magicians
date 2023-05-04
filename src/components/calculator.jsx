@@ -1,49 +1,48 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import '../styles/calculator.scss';
 
-// Main component
-function Calculator() {
-  const [text, setText] = useState({
-    total: null,
-    next: null,
-    operation: null,
-  });
+const objTemplate = {
+  total: null,
+  next: null,
+  operation: null,
+};
 
-  let result;
-  if (text.next) {
-    result = text.next;
-  } else if (text.total) {
-    result = text.total;
-  } else result = 0;
+function Calculator() {
+  const [obj, setObj] = useState(objTemplate);
+
+  let result = 0;
+  if (obj.next) {
+    result = obj.next;
+  } else if (obj.total) {
+    result = obj.total;
+  }
 
   const handleButtonClick = (event) => {
-    const newValue = calculate(text, event.target.textContent);
-    setText({ ...text, ...newValue });
+    const newValue = calculate(obj, event.target.textContent);
+    setObj({ ...obj, ...newValue });
   };
 
   return (
     <div className="calculator">
       <div className="calculator__h2">Let&apos;s do some math!</div>
       <div className="calculator__container">
-        <Screen text={result} />
+        <Screen obj={result} />
         <Buttons clickValue={handleButtonClick} />
       </div>
     </div>
   );
 }
 
-// Screen component
-function Screen({ text }) {
+function Screen({ obj }) {
   return (
     <div className="screen-container">
-      <div className="screen">{text}</div>
+      <div className="screen">{obj}</div>
     </div>
   );
 }
 
-// Buttons component
 function Buttons({ clickValue }) {
   const simbols = [
     'AC',
@@ -79,7 +78,7 @@ function Buttons({ clickValue }) {
 }
 
 Screen.propTypes = {
-  text: PropTypes.string.isRequired,
+  obj: PropTypes.string.isRequired,
 };
 
 export default Calculator;
