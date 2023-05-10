@@ -16,6 +16,7 @@
   width: 20rem;
   margin: auto;
   text-align: center;
+  border: 3px solid map-get($colors, secondary-white);
 }
 
 .screen-container {
@@ -35,7 +36,7 @@
 
 .button:hover {
   cursor: pointer;
-  transform: scale(0.92);
+  transform: scale(0.95);
 }
 
 .button:nth-child(18n) {
@@ -50,4 +51,17 @@
 .main-container {
   border-radius: 10px;
   border: 5px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    flex-direction: column;
+    margin: 0;
+  }
+  .calculator__h2 {
+    font-size: 2rem;
+  }
+  .calculator__container {
+    width: 78%;
+  }
 }

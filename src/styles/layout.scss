@@ -26,3 +26,17 @@
 .navbar__a:hover {
   color: map-get($colors, primary-white);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar__h1 {
+    font-size: 2rem;
+  }
+  .navbar__ul {
+    padding: 0;
+  }
+}

@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
-<!-- <div align="center">
+<div align="center">
   <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-  <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="logo" width="340"  height="auto" /><br/>
+  <img src="https://user-images.githubusercontent.com/109441277/236330470-e6931a45-a03a-4d55-8024-79a69170dd13.png" alt="logo" width="340"  height="auto" /><br/>
   </a>
-</div> -->
+</div>
 
 # Math magicians
 
@@ -69,9 +69,7 @@
 
 ## 🚀 Live demo <a name="live-demo"></a>
 
-Under construction.
-
-<!-- - [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/) -->
+- [Live Demo Link](https://math-magicians-react-j7ew.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
