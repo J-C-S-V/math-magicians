@@ -71,7 +71,7 @@ function Buttons({ clickValue }) {
     simbolsContainer.push(
       <button onClick={clickValue} type="button" className="button" key={i}>
         {simbols[i]}
-      </button>
+      </button>,
     );
   }
   return simbolsContainer;
