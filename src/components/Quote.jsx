@@ -44,7 +44,10 @@ function Quote() {
             {quote}
             &quot;
           </p>
-          <p>Author : {author}</p>
+          <p>
+            Author :
+            {author}
+          </p>
         </>
       ) : null}
     </div>
