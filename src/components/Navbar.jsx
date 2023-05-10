@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import '../styles/layout.scss';
 
 export default function Navbar() {
@@ -8,19 +8,19 @@ export default function Navbar() {
         <h1 className="navbar__h1">Math Magicians</h1>
         <ul className="navbar__ul">
           <li className="navbar__li">
-            <a className="navbar__a" href="http://localhost:3000/">
+            <Link className="navbar__a" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar__li">
-            <a className="navbar__a" href="http://localhost:3000/calculator">
+            <Link className="navbar__a" to="/calculator">
               Calculator
-            </a>
+            </Link>
           </li>
           <li className="navbar__li">
-            <a className="navbar__a" href="http://localhost:3000/quote">
+            <Link className="navbar__a" to="/quote">
               Quote
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
